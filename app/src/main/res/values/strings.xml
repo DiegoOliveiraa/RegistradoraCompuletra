@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RegistradoraCompuletra</string>
+    <string name="digite_o_troco">Digite o troco:</string>
+    <string name="item">Item</string>
+    <string name="configura_es">Configurações</string>
+    <string name="sair">Sair</string>
+    <string name="menu_configuracoes">menu_configuracoes</string>
+    <string name="menu_sair">menu_sair</string>
+    <string name="configuracoes" />
+    <string name="calculadora_de_moedas">Calculadora de moedas</string>
+    <string name="qnt">Qnt</string>
+    <string name="digite_o_valor_a_ser_dado_troco">Digite o valor a ser dado troco</string>
+    <string name="qnt1">Qnt</string>
+    <string name="_50_centavos">50 Centavos</string>
+    <string name="qnt50">Qnt</string>
+    <string name="_25_centavos">25 Centavos</string>
+    <string name="qnt25">Qnt</string>
+    <string name="_10_centavos">10 Centavos</string>
+    <string name="qnt107">Qnt</string>
+    <string name="_5_centavos">5 Centavos</string>
+    <string name="qnt5">Qnt</string>
+</resources>
