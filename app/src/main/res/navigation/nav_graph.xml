@@ -2,4 +2,34 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph" />
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/telaPrincipal">
+
+    <fragment
+        android:id="@+id/sangriaDeMoedas"
+        android:name="com.compuletra.registradora.ui.SangriaDeMoedas"
+        android:label="SangriaDeMoedas"
+        tools:layout="@layout/sangria_de_moedas">
+        <action
+            android:id="@+id/botaoVoltaSangria"
+            app:destination="@id/telaPrincipal"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:launchSingleTop="false" />
+        <argument
+            android:name="Valor"
+            android:defaultValue="0.00"
+            app:argType="float" />
+    </fragment>
+    <fragment
+        android:id="@+id/telaPrincipal"
+        android:name="com.compuletra.registradora.ui.TelaPrincipal"
+        android:label="TelaPrincipal"
+        tools:layout="@layout/main_activity">
+        <action
+            android:id="@+id/botaoSangriaDeMoedas"
+            app:destination="@id/sangriaDeMoedas"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+</navigation>
