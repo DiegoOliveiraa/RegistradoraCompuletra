@@ -1,4 +1,4 @@
-package bancodedados
+package com.compuletra.registradora.bancodedados
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
