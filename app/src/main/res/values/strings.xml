@@ -16,7 +16,12 @@
     <string name="_25_centavos">25 Centavos</string>
     <string name="qnt25">Qnt</string>
     <string name="_10_centavos">10 Centavos</string>
-    <string name="qnt107">Qnt</string>
+    <string name="qnt10">Qnt</string>
     <string name="_5_centavos">5 Centavos</string>
     <string name="qnt5">Qnt</string>
+    <string name="Reais100">R$ 100</string>
+    <string name="calcular_troco">Calcular troco</string>
+    <string name="sangria_de_moedas">Sangria de moedas</string>
+    <string name="configuracoes_menu">configurações</string>
+    <string name="voltar">Voltar</string>
 </resources>

@@ -5,57 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:background="@drawable/moedas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#9C3C3C"
-                android:backgroundTint="#120808"
-                android:fontFamily="@font/aladin"
-                android:text="@string/calculadora_de_moedas"
-                android:textColor="#FF0000"
-                android:textSize="48sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.709"
-                tools:ignore="MissingConstraints,TextContrastCheck" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </RelativeLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/relativeLayout"
-        tools:ignore="MissingConstraints">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/digite_o_valor_a_ser_dado_troco"
-            android:inputType="numberDecimal"
-            android:textColorHint="#616161"
-            tools:ignore="TextContrastCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -63,278 +12,318 @@
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/moedas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginEnd="227dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#9C9C9C"
+                android:elevation="8dp"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="@string/Reais100"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabMais1Real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="34dp"
+            android:contentDescription="@string/app_name"
+            app:icon="@drawable/mais"
+            app:layout_constraintEnd_toEndOf="@+id/fabMais50"
+            app:layout_constraintStart_toStartOf="@+id/fabMais50"
+            app:layout_constraintTop_toBottomOf="@+id/fabMais50" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/fabMais5"
-            android:layout_width="42dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="58dp"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="283dp"
             android:contentDescription="@string/app_name"
             app:icon="@drawable/mais"
-            app:layout_constraintBottom_toTopOf="@+id/fabMais10"
-            app:layout_constraintEnd_toStartOf="@+id/cinco5Cents"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="DuplicateSpeakableTextCheck" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/fabMais10"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="58dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
             android:contentDescription="@string/app_name"
             app:icon="@drawable/mais"
-            app:layout_constraintBottom_toTopOf="@+id/fabMais25"
-            app:layout_constraintEnd_toStartOf="@+id/dez10Cents"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fabMais5"
+            app:layout_constraintStart_toStartOf="@+id/fabMais5"
             app:layout_constraintTop_toBottomOf="@+id/fabMais5"
             tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/fabMais25"
-            android:layout_width="42dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="58dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
             android:contentDescription="@string/app_name"
             app:icon="@drawable/mais"
-            app:layout_constraintBottom_toTopOf="@+id/fabMais50"
-            app:layout_constraintEnd_toStartOf="@+id/vintecinco25Cents"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fabMais10"
+            app:layout_constraintStart_toStartOf="@+id/fabMais10"
             app:layout_constraintTop_toBottomOf="@+id/fabMais10"
             tools:ignore="MissingConstraints,DuplicateSpeakableTextCheck" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/fabMais50"
-            android:layout_width="42dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="58dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
             android:contentDescription="@string/app_name"
             app:icon="@drawable/mais"
-            app:layout_constraintBottom_toTopOf="@+id/fabMais1Real"
-            app:layout_constraintEnd_toStartOf="@+id/cinquenta50Centavos"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fabMais25"
+            app:layout_constraintStart_toStartOf="@+id/fabMais25"
             app:layout_constraintTop_toBottomOf="@+id/fabMais25"
             tools:ignore="MissingConstraints" />
-
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/fabMais1Real"
-            android:layout_width="43dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="58dp"
-
-            android:contentDescription="@string/app_name"
-            app:icon="@drawable/mais"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/umReal"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fabMais50" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/fabMenos5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="283dp"
             android:layout_marginEnd="64dp"
             android:contentDescription="@string/calculadora_de_moedas"
             app:icon="@drawable/menos"
-            app:layout_constraintBottom_toTopOf="@+id/fabMenos10"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/cinco5Cents"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/fabMenos10"
-            android:layout_width="42dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="64dp"
+            android:layout_marginTop="34dp"
             android:contentDescription="@string/app_name"
             app:icon="@drawable/menos"
-            app:layout_constraintBottom_toTopOf="@+id/fabMenos25"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/dez10Cents"
-            app:layout_constraintTop_toBottomOf="@+id/fabMenos5"
-            app:layout_constraintVertical_bias="0.15" />
+            app:layout_constraintEnd_toEndOf="@+id/fabMenos5"
+            app:layout_constraintStart_toStartOf="@+id/fabMenos5"
+            app:layout_constraintTop_toBottomOf="@+id/fabMenos5" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/fabMenos25"
-            android:layout_width="42dp"
-            android:layout_height="39dp"
-            android:layout_marginEnd="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
             android:contentDescription="@string/app_name"
             app:icon="@drawable/menos"
-            app:layout_constraintBottom_toTopOf="@+id/fabMenos50"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/vintecinco25Cents"
+            app:layout_constraintEnd_toEndOf="@+id/fabMenos10"
+            app:layout_constraintStart_toStartOf="@+id/fabMenos10"
             app:layout_constraintTop_toBottomOf="@+id/fabMenos10" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/fabMenos50"
-            android:layout_width="42dp"
-            android:layout_height="39dp"
-            android:layout_marginEnd="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
             android:contentDescription="@string/app_name"
             app:icon="@drawable/menos"
-            app:layout_constraintBottom_toTopOf="@+id/fabMenos1Real"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/cinquenta50Centavos"
+            app:layout_constraintEnd_toEndOf="@+id/fabMenos25"
+            app:layout_constraintStart_toStartOf="@+id/fabMenos25"
             app:layout_constraintTop_toBottomOf="@+id/fabMenos25" />
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/fabMenos1Real"
-            android:layout_width="42dp"
-            android:layout_height="39dp"
-            android:layout_marginEnd="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
             android:contentDescription="@string/app_name"
             app:icon="@drawable/menos"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/umReal"
+            app:layout_constraintEnd_toEndOf="@+id/fabMenos50"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fabMenos50"
             app:layout_constraintTop_toBottomOf="@+id/fabMenos50" />
 
         <TextView
             android:id="@+id/umReal"
-            android:layout_width="85dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="81dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginTop="44dp"
             android:text="1 Real"
             android:textAlignment="center"
-            app:layout_constraintEnd_toStartOf="@+id/fabMenos1Real"
-            app:layout_constraintStart_toEndOf="@+id/fabMais1Real"
+            app:layout_constraintEnd_toEndOf="@+id/cinquenta50Centavos"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cinquenta50Centavos"
             app:layout_constraintTop_toBottomOf="@+id/qnt50Cents"
             tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/qnt1Real"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/qnt1"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="@+id/umReal"
-            app:layout_constraintHorizontal_bias="0.507"
             app:layout_constraintStart_toStartOf="@+id/umReal"
             app:layout_constraintTop_toBottomOf="@+id/umReal" />
 
         <TextView
             android:id="@+id/cinquenta50Centavos"
-            android:layout_width="80dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="49dp"
-            android:layout_marginTop="62dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginTop="44dp"
             android:text="@string/_50_centavos"
             android:textAlignment="center"
-            app:layout_constraintEnd_toStartOf="@+id/fabMenos50"
-            app:layout_constraintStart_toEndOf="@+id/fabMais50"
+            app:layout_constraintEnd_toEndOf="@+id/vintecinco25Cents"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/vintecinco25Cents"
             app:layout_constraintTop_toBottomOf="@+id/qnt25Cents" />
 
         <TextView
             android:id="@+id/qnt50Cents"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="19dp"
+            android:layout_marginTop="6dp"
             android:text="@string/qnt50"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="@+id/cinquenta50Centavos"
-            app:layout_constraintHorizontal_bias="0.465"
             app:layout_constraintStart_toStartOf="@+id/cinquenta50Centavos"
-            app:layout_constraintTop_toTopOf="@+id/cinquenta50Centavos" />
+            app:layout_constraintTop_toBottomOf="@+id/cinquenta50Centavos" />
 
         <TextView
             android:id="@+id/vintecinco25Cents"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="51dp"
-            android:layout_marginTop="69dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginTop="48dp"
             android:text="@string/_25_centavos"
             android:textAlignment="center"
-            app:layout_constraintBottom_toTopOf="@+id/cinquenta50Centavos"
-            app:layout_constraintEnd_toStartOf="@+id/fabMenos25"
-            app:layout_constraintStart_toEndOf="@+id/fabMais25"
-            app:layout_constraintTop_toBottomOf="@+id/qnt10Cents"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintEnd_toEndOf="@+id/dez10Cents"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/dez10Cents"
+            app:layout_constraintTop_toBottomOf="@+id/qnt10Cents" />
 
         <TextView
             android:id="@+id/qnt25Cents"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="19dp"
+            android:layout_marginTop="4dp"
             android:text="@string/qnt25"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="@+id/vintecinco25Cents"
-            app:layout_constraintHorizontal_bias="0.517"
             app:layout_constraintStart_toStartOf="@+id/vintecinco25Cents"
-            app:layout_constraintTop_toTopOf="@+id/vintecinco25Cents" />
+            app:layout_constraintTop_toBottomOf="@+id/vintecinco25Cents" />
 
         <TextView
             android:id="@+id/dez10Cents"
-            android:layout_width="80dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="49dp"
-            android:layout_marginTop="84dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginTop="40dp"
             android:text="@string/_10_centavos"
             android:textAlignment="center"
-            app:layout_constraintBottom_toTopOf="@+id/vintecinco25Cents"
-            app:layout_constraintEnd_toStartOf="@+id/fabMenos10"
-            app:layout_constraintStart_toEndOf="@+id/fabMais10"
-            app:layout_constraintTop_toBottomOf="@+id/qnt5Cents"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintEnd_toEndOf="@+id/cinco5Cents"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cinco5Cents"
+            app:layout_constraintTop_toBottomOf="@+id/qnt5Cents" />
 
         <TextView
             android:id="@+id/qnt10Cents"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="19dp"
-            android:text="@string/qnt107"
+            android:layout_marginTop="7dp"
+            android:text="@string/qnt10"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="@+id/dez10Cents"
-            app:layout_constraintHorizontal_bias="0.465"
             app:layout_constraintStart_toStartOf="@+id/dez10Cents"
-            app:layout_constraintTop_toTopOf="@+id/dez10Cents" />
+            app:layout_constraintTop_toBottomOf="@+id/dez10Cents" />
 
         <TextView
             android:id="@+id/cinco5Cents"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="49dp"
-            android:layout_marginTop="300dp"
-            android:layout_marginEnd="48dp"
+            android:layout_marginTop="288dp"
             android:text="@string/_5_centavos"
             android:textAlignment="center"
-            app:layout_constraintBottom_toTopOf="@+id/dez10Cents"
             app:layout_constraintEnd_toStartOf="@+id/fabMenos5"
+            app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toEndOf="@+id/fabMais5"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.13" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/qnt5Cents"
-            android:layout_width="25dp"
-            android:layout_height="15dp"
-            android:layout_marginTop="19dp"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="8dp"
             android:text="@string/qnt5"
             android:textAlignment="center"
             app:layout_constraintEnd_toEndOf="@+id/cinco5Cents"
-            app:layout_constraintHorizontal_bias="0.527"
             app:layout_constraintStart_toStartOf="@+id/cinco5Cents"
-            app:layout_constraintTop_toTopOf="@+id/cinco5Cents" />
+            app:layout_constraintTop_toBottomOf="@+id/cinco5Cents" />
+
+        <Button
+            android:id="@+id/botaoCalcularTroco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="72dp"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="casual"
+            android:text="@string/calcular_troco"
+            app:iconTint="#FF0000"
+            app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <Button
+            android:id="@+id/botaoSangriaDeMoedas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="152dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/purple_200"
+            android:fontFamily="casual"
+            android:text="@string/sangria_de_moedas"
+            app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/botaoCalcularTroco"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="200dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
