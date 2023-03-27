@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -39,15 +40,13 @@ android {
 }
 
 dependencies {
-    //Negation
-    implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
-    implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
-
     //Melhorias do App
     implementation 'androidx.core:core-ktx:1.9.0'
 
     //Banco de Dados
     implementation 'com.google.firebase:firebase-firestore-ktx:24.4.5'
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'androidx.preference:preference-ktx:1.2.0'
     annotationProcessor "androidx.room:room-compiler:2.5.1"
     implementation "androidx.room:room-runtime:2.5.1"
     implementation 'androidx.room:room-common:2.5.1'
@@ -60,4 +59,8 @@ dependencies {
 
     //Material design
     implementation 'com.google.android.material:material:1.8.0'
+
+    //Negation
+    implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
+    implementation "androidx.navigation:navigation-ui-ktx:2.5.3"
 }
