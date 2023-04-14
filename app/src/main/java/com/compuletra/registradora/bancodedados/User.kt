@@ -7,9 +7,17 @@ import androidx.room.PrimaryKey
 @Entity
 data class User(
     @PrimaryKey val key: Int,
-    @ColumnInfo(name = "moeda_cinco") val cincoCents: String?,
-    @ColumnInfo(name = "moeda_dez") val dezCents: String?,
-    @ColumnInfo(name = "moeda_vintecinco") val vinteCincoCents: String?,
-    @ColumnInfo(name = "moeda_cinquenta") val cinquentaCents: String?,
-    @ColumnInfo(name = "moeda_um") val umReal: String?
-)
+    @ColumnInfo(name = "moeda_cinco") val cincoCents: Double? = null,
+    @ColumnInfo(name = "moeda_dez") val dezCents: Double? = null,
+    @ColumnInfo(name = "moeda_vintecinco") val vinteCincoCents: Double? = null,
+    @ColumnInfo(name = "moeda_cinquenta") val cinquentaCents: Double? = null,
+    @ColumnInfo(name = "moeda_um") val umReal: Double? = null
+) {
+    operator fun plus(valorDaMoeda: Double): Double? {
+        return cincoCents?.plus(valorDaMoeda)
+    }
+
+    operator fun minus(valorDaMoeda: Double): Double? {
+       return cincoCents?.minus(valorDaMoeda)
+    }
+}
