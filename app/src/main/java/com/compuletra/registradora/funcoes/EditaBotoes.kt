@@ -24,26 +24,6 @@ class EditaBotoes {
     private val botaoRemove50 = binding.fabMenos50
     private val botaoRemove1Real = binding.fabMenos1Real
 
-    fun editaBotoesMais(
-        botao: Button,
-        campoQuantidade: TextView,
-        valorDaMoeda: Double,
-        user: Unit
-    ){
-        botao.setOnClickListener {
-            val novoValor = user + valorDaMoeda
-            campoQuantidade.text = novoValor.toString()
-        }
-    }
-    fun editaBotoesMenos(
-        botao: Button,
-        campoQuantidade: TextView,
-        valorDaMoeda: Double,
-        user: User
-    ){
-        botao.setOnClickListener {
-            val novoValor = user - valorDaMoeda
-            campoQuantidade.text = novoValor.toString()
-        }
-    }
+
+
 }
