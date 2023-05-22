@@ -12,12 +12,4 @@ data class User(
     @ColumnInfo(name = "moeda_vintecinco") val vinteCincoCents: Double? = null,
     @ColumnInfo(name = "moeda_cinquenta") val cinquentaCents: Double? = null,
     @ColumnInfo(name = "moeda_um") val umReal: Double? = null
-) {
-    operator fun plus(valorDaMoeda: Double): Double? {
-        return cincoCents?.plus(valorDaMoeda)
-    }
-
-    operator fun minus(valorDaMoeda: Double): Double? {
-       return cincoCents?.minus(valorDaMoeda)
-    }
-}
+)

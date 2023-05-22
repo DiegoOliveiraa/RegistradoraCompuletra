@@ -41,10 +41,10 @@ android {
 
 dependencies {
     //Melhorias do App
-    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.core:core-ktx:1.10.1'
 
     //Banco de Dados
-    implementation 'com.google.firebase:firebase-firestore-ktx:24.4.5'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.6.0'
     implementation 'androidx.preference:preference:1.2.0'
     implementation 'androidx.preference:preference-ktx:1.2.0'
     annotationProcessor "androidx.room:room-compiler:2.5.1"
@@ -58,7 +58,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     //Material design
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.google.android.material:material:1.9.0'
 
     //Negation
     implementation "androidx.navigation:navigation-fragment-ktx:2.5.3"
