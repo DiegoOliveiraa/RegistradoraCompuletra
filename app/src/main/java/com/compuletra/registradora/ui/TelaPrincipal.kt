@@ -38,7 +38,11 @@ class TelaPrincipal : Fragment(R.layout.main_activity) {
             requireContext(),
             AppDatabase::class.java, "database-name"
         ).build()
+<<<<<<< HEAD
         db.userDao().adicionar(User(id, 0.05))
+=======
+        db.userDao()?.adicionar(User(id, 0.05))
+>>>>>>> master
     }
 
     override fun onDestroyView() {
