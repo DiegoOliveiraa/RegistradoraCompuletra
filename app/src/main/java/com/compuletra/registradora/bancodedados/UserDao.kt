@@ -4,11 +4,14 @@ import androidx.room.*
 
 @Dao
 interface UserDao {
-    @Query("SELECT * FROM user")
+    @Query("SELECT * FROM User")
     fun pegarTodos(): List<User>
 
     @Update
-    fun adicionar(vararg users: User)
+    fun atualizar(vararg user: User)
+
+    @Insert
+    fun adiciona(vararg user: User)
 
     @Delete
     fun remover(user: User)
