@@ -151,7 +151,7 @@
                 android:id="@+id/fabMenos50"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="33dp"
+                android:layout_marginTop="34dp"
                 android:contentDescription="@string/app_name"
                 app:icon="@drawable/menos"
                 app:layout_constraintEnd_toEndOf="@+id/fabMenos25"
@@ -162,7 +162,7 @@
                 android:id="@+id/fabMenos1Real"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="34dp"
                 android:contentDescription="@string/app_name"
                 app:icon="@drawable/menos"
                 app:layout_constraintEnd_toEndOf="@+id/fabMenos50"
@@ -174,7 +174,8 @@
                 android:id="@+id/umReal"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="44dp"
+                android:layout_marginTop="47dp"
+                android:elevation="8dp"
                 android:text="1 Real"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/cinquenta50Centavos"
@@ -187,6 +188,8 @@
                 android:id="@+id/qnt1Real"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:elevation="8dp"
                 android:text="@string/qnt1"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/umReal"
@@ -198,6 +201,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="44dp"
+                android:elevation="8dp"
                 android:text="@string/_50_centavos"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/vintecinco25Cents"
@@ -209,7 +213,8 @@
                 android:id="@+id/qnt50Cents"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="4dp"
+                android:elevation="8dp"
                 android:text="@string/qnt50"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/cinquenta50Centavos"
@@ -221,6 +226,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
+                android:elevation="8dp"
                 android:text="@string/_25_centavos"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/dez10Cents"
@@ -233,6 +239,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
+                android:elevation="8dp"
                 android:text="@string/qnt25"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/vintecinco25Cents"
@@ -244,6 +251,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
+                android:elevation="8dp"
                 android:text="@string/_10_centavos"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/cinco5Cents"
@@ -256,6 +264,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
+                android:elevation="8dp"
                 android:text="@string/qnt10"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/dez10Cents"
@@ -267,6 +276,7 @@
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="288dp"
+                android:elevation="8dp"
                 android:text="@string/_5_centavos"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toStartOf="@+id/fabMenos5"
@@ -280,6 +290,7 @@
                 android:layout_width="0dp"
                 android:layout_height="22dp"
                 android:layout_marginTop="8dp"
+                android:elevation="8dp"
                 android:text="@string/qnt5"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/cinco5Cents"
@@ -321,6 +332,61 @@
                 app:layout_constraintStart_toEndOf="@+id/botaoCalcularTroco"
                 app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
                 tools:ignore="TextContrastCheck" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="73dp"
+
+                android:background="@color/purple_200"
+                app:layout_constraintEnd_toEndOf="@+id/fabMenos5"
+                app:layout_constraintStart_toStartOf="@+id/fabMais5"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="15dp"
+
+                android:background="@color/purple_200"
+                app:layout_constraintEnd_toEndOf="@+id/fabMenos10"
+                app:layout_constraintStart_toStartOf="@+id/fabMais10"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="15dp"
+
+                android:background="@color/purple_200"
+                app:layout_constraintEnd_toEndOf="@+id/fabMenos25"
+                app:layout_constraintStart_toStartOf="@+id/fabMais25"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="15dp"
+
+                android:background="@color/purple_200"
+                app:layout_constraintEnd_toEndOf="@+id/fabMenos50"
+                app:layout_constraintStart_toStartOf="@+id/fabMais50"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="335dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="15dp"
+
+                android:background="@color/purple_200"
+                app:layout_constraintEnd_toEndOf="@+id/fabMenos1Real"
+                app:layout_constraintStart_toStartOf="@+id/fabMais1Real"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
