@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/sangriaDeMoedas"
-        android:name="com.compuletra.registradora.ui.SangriaDeMoedas"
+        android:name="com.compuletra.registradora.ui.fragments.seconfragment.SangriaDeMoedas"
         android:label="SangriaDeMoedas"
         tools:layout="@layout/sangria_de_moedas">
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/telaPrincipal"
-        android:name="com.compuletra.registradora.ui.TelaPrincipal"
+        android:name="com.compuletra.registradora.ui.fragments.firstfragment.TelaPrincipal"
         android:label="TelaPrincipal"
         tools:layout="@layout/main_activity">
         <action

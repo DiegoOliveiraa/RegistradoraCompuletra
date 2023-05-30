@@ -1,9 +1,9 @@
-package com.compuletra.registradora.funcoes
+package com.compuletra.registradora.funcoes.buttons
 
 import android.widget.Button
 import android.widget.TextView
-import com.compuletra.registradora.bancodedados.User
-import com.compuletra.registradora.bancodedados.UserDao
+import com.compuletra.registradora.bancodedados.user.User
+import com.compuletra.registradora.bancodedados.userdao.UserDao
 import java.math.BigDecimal
 
 class EditaBotoes {
@@ -37,7 +37,7 @@ class EditaBotoes {
                     else -> {}
                 }
 
-                // adiciona o usuário no banco de dados usando o UserDao
+                // adiciona o usuário no banco de dados usando o com.compuletra.registradora.bancodedados.userdao.UserDao
                 userDao.adiciona(it)
             }
         }

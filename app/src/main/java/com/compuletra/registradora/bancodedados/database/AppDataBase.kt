@@ -1,13 +1,13 @@
-package com.compuletra.registradora.bancodedados.dao
+package com.compuletra.registradora.bancodedados.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.compuletra.registradora.bancodedados.User
-import com.compuletra.registradora.bancodedados.UserDao
 import com.compuletra.registradora.bancodedados.converter.Converters
+import com.compuletra.registradora.bancodedados.user.User
+import com.compuletra.registradora.bancodedados.userdao.UserDao
 
 @Database(entities = [User::class], version = 1)
 @TypeConverters(Converters::class)

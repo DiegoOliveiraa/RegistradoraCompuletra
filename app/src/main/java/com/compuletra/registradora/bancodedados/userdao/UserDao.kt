@@ -1,10 +1,11 @@
-package com.compuletra.registradora.bancodedados
+package com.compuletra.registradora.bancodedados.userdao
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
+import com.compuletra.registradora.bancodedados.user.User
 
 @Dao
 interface UserDao {

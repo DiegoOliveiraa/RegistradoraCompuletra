@@ -44,7 +44,7 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.10.1'
 
     //Banco de Dados
-    implementation 'com.google.firebase:firebase-firestore-ktx:24.6.0'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.6.1'
     implementation 'androidx.preference:preference:1.2.0'
     implementation 'androidx.preference:preference-ktx:1.2.0'
     implementation 'androidx.core:core-ktx:1.10.1'

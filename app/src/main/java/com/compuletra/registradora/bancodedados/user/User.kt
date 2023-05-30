@@ -1,4 +1,4 @@
-package com.compuletra.registradora.bancodedados
+package com.compuletra.registradora.bancodedados.user
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

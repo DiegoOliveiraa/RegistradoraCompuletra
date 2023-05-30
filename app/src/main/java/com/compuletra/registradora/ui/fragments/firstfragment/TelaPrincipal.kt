@@ -1,4 +1,4 @@
-package com.compuletra.registradora.ui
+package com.compuletra.registradora.ui.fragments.firstfragment
 
 import android.content.Context
 import android.os.Bundle
@@ -8,16 +8,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.compuletra.registradora.R
-import com.compuletra.registradora.bancodedados.dao.AppDatabase
-import com.compuletra.registradora.bancodedados.User
-import com.compuletra.registradora.bancodedados.UserDao
+import com.compuletra.registradora.bancodedados.database.AppDatabase
+import com.compuletra.registradora.bancodedados.user.User
 import com.compuletra.registradora.databinding.MainActivityBinding
-import com.compuletra.registradora.funcoes.EditaBotoes
+import com.compuletra.registradora.funcoes.buttons.EditaBotoes
 import java.math.BigDecimal
 
 class TelaPrincipal : Fragment(R.layout.main_activity) {
     private var _binding: MainActivityBinding? = null
-    private lateinit var userDao: UserDao
     private lateinit var botoes: EditaBotoes
     private val binding get() = _binding!!
 
@@ -44,7 +42,13 @@ class TelaPrincipal : Fragment(R.layout.main_activity) {
         val userId = 1
         val user = userDao.pegaUsuarioPorId(userId) ?: User(userId)
 
-        botoes.editaBotoesMais(binding.fabMais5,binding.qnt5Cents, BigDecimal("0.05"),user,userDao)
+        botoes.editaBotoesMais(
+            binding.fabMais5,
+            binding.qnt5Cents,
+            BigDecimal("0.05"),
+            user,
+            userDao
+        )
 
 
     }

@@ -1,4 +1,4 @@
-package com.compuletra.registradora.ui
+package com.compuletra.registradora.ui.fragments.seconfragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,9 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
 import com.compuletra.registradora.R
-import com.compuletra.registradora.databinding.MainActivityBinding
 import com.compuletra.registradora.databinding.SangriaDeMoedasBinding
 
 class SangriaDeMoedas : Fragment(R.layout.sangria_de_moedas) {
@@ -21,7 +19,7 @@ class SangriaDeMoedas : Fragment(R.layout.sangria_de_moedas) {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = SangriaDeMoedasBinding   .inflate(inflater, container, false)
+        _binding = SangriaDeMoedasBinding.inflate(inflater, container, false)
         return binding.root
 
     }
